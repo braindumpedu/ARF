@@ -64,3 +64,4 @@ while escolha != -1:
         print("Adeus")
     else:
         print("Escolha inválida")
+print (V)
