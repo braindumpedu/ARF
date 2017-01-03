@@ -46,8 +46,21 @@ def ler_bissexto():
         print("Nao sou SaoPaulino")
 
 def calcular_media():
+    
     #Ler do usuario numeros até que a entrada seja -1 e devolver a media dos numeros inseridos
-    pass
+    nvezes = 0
+    soma = 0
+    n = 0
+    while n != -1:
+        n = int (input("entrada"))
+        if n != -1 :
+            nvezes = nvezes + 1
+            soma = soma + n
+    print (float (soma/nvezes))
+    print (nvezes)
+        
+
+
 
 escolha = 0
 while escolha != -1:
@@ -60,8 +73,9 @@ while escolha != -1:
         calcular_velocidade()
     elif escolha == 3:
         ler_bissexto()
+    elif escolha == 4:
+        calcular_media()
     elif escolha == -1:
         print("Adeus")
     else:
         print("Escolha inválida")
-print (V)
