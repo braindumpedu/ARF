@@ -11,8 +11,6 @@ def somar():
     return soma
 
 def verificar():
-    print("Lancando os dados pela primeira vez..")
-    time.sleep(3)
     soma = somar()
 
     if soma == 7 or soma == 11:
@@ -23,14 +21,15 @@ def verificar():
         valor = soma
         valor = somar()
         while valor!= soma and valor!= 7:
-            variavel = somar()
-
-            if variavel == valor:
-                    print ("ganhou pela repeticao")
-            elif variavel== 7:
-                    print("perdeu pelo sete")
-            if variavel  == valor or variavel == 7:
-                break
+            valor = somar()
+            
+        if valor == soma:
+            print ("ganhou pela repeticao")
+        
+        elif valor == 7:
+            print("perdeu pelo sete")
+        
+            
 
 
 verificar()
