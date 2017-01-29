@@ -2,8 +2,7 @@ x = 2
 y = 3
 
 def trocaV():
-    x = 2
-    y = 3
+    global x,y
     if x < y:
         x = y
         y = x -1
