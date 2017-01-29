@@ -2,6 +2,8 @@ x = 2
 y = 3
 
 def trocaV():
+    x = 2
+    y = 3
     if x < y:
         x = y
         y = x -1
